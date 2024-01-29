@@ -1,39 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.h                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/25 13:44:58 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/29 10:49:03 by dacortes         ###   ########.fr       */
+/*   Created: 2024/01/29 15:00:19 by dacortes          #+#    #+#             */
+/*   Updated: 2024/01/29 15:17:31 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_H
-# define ZOMBIE_H
-
 /* ************************************************************************** */
-/*	Includes                                                                  */
+/*  Includes                                                                  */
 /* ************************************************************************** */
 
 #include <string>
 #include <cstring>
 #include <cstdlib>
 #include <iostream>
-#include "Zombie.hpp"
-
-/* ************************************************************************** */
-/*	Macros                                                                    */
-/* ************************************************************************** */
-
-#define	ERROR	-1
-#define	SUCCESS	0
 
 /******************************************************************************/
-/*	Funtions                                                                  */
+/*  Funtions                                                                  */
 /******************************************************************************/
 
-Zombie	*zombieHorde(int N, std::string name);
+int	main(void)
+{
+	std::string	foo = "HI THIS IS BRAIN";
+	std::string *stringPTR = &foo;
+	std::string &stringREF = foo;
 
-#endif
+
+	std::cout << "foo: " << &foo << std::endl;
+	std::cout << "stringPTR: " << stringPTR << std::endl;
+	std::cout << "stringREF: " << &stringREF << std::endl;
+	std::cout << "----------------------------" << std::endl;
+	std::cout << "foo: " << foo << std::endl;
+	std::cout << "stringPTR: " << *stringPTR << std::endl;
+	std::cout << "stringREF: " << stringREF << std::endl;
+	std::cout << "----------------------------" << std::endl;
+	return (EXIT_SUCCESS);
+}
