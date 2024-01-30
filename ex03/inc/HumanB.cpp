@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 15:38:31 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/30 12:07:03 by dacortes         ###   ########.fr       */
+/*   Created: 2024/01/30 11:10:09 by dacortes          #+#    #+#             */
+/*   Updated: 2024/01/30 11:56:36 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	WEAPON_HPP
-# define WEAPON_HPP
+#ifndef	HUMANB_CPP
+# define HUMANB_CPP
 
 #include "Weapon.h"
 
-class	Weapon
+class	HumanB
 {
 	private:
-		std::string	type;
+		std::string	name;
+		Weapon		weapon;
 	public:
-		Weapon(void);
-		Weapon(std::string type);
-		const std::string	getType(void);
-		/*
-		 *	method get
-		*/
-		std::string const	get_type(void) const;
-		/*
-		 *	method set
-		*/
-		void				setType(std::string type);
-		~Weapon(void);
+		HumanA(void);
+		void	attack(void);
+		~HumanA(void);
 };
-
 #endif

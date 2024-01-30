@@ -5,19 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 15:53:58 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/29 16:01:04 by dacortes         ###   ########.fr       */
+/*   Created: 2024/01/30 11:58:49 by dacortes          #+#    #+#             */
+/*   Updated: 2024/01/30 12:04:01 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	HUMANA_CPP
-#define HUMANA_CPP
+#include "../inc/Weapon.h"
 
-#include "Weapon.h"
-
-class	HumanA
+HumanA::HumanA(std::string _name, Weapon _wapon): name(_name), wapon(_wapon)
 {
+}
 
-};
+void	HumanA::attack(void)
+{
+	std::cout << name <<  " attacks with their " << weapon << std::endl;
+}
 
-#endif
+HumanA::~HumanA(void)
+{
+}
