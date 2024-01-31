@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 08:50:11 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/31 11:50:55 by dacortes         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:16:46 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@
 #define ERROR_EMPTY_WD	2
 #define	ERROR_EMPTY_FL	3
 #define ERROR_OPEN_FL	4
-	
+#define ERROR_OUT_FL	5	
 #endif
