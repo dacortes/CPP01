@@ -4,6 +4,7 @@ obj
 *.swp
 .DS_*
 ._.*
+.vscode
 Brainz
 Horder
 Hi_this_is_brain
