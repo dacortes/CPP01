@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 08:50:11 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/31 09:24:44 by dacortes         ###   ########.fr       */
+/*   Updated: 2024/01/31 11:50:55 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 /*	Includes                                                                  */
 /* ************************************************************************** */
 
+#include <fstream>
 #include <string>
-#include <cstring>
 #include <cstdlib>
 #include <iostream>
 
@@ -29,5 +29,6 @@
 #define	ERROR_INV_ARGS	1
 #define ERROR_EMPTY_WD	2
 #define	ERROR_EMPTY_FL	3
+#define ERROR_OPEN_FL	4
 	
 #endif
