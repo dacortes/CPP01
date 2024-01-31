@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.hpp                                         :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 15:53:58 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/31 07:07:27 by dacortes         ###   ########.fr       */
+/*   Created: 2024/01/30 11:10:09 by dacortes          #+#    #+#             */
+/*   Updated: 2024/01/31 07:11:48 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	HUMANA_CPP
-# define HUMANA_CPP
+#ifndef	HUMANB_CPP
+# define HUMANB_CPP
 
 #include "Weapon.h"
 
-class	HumanA
+class	HumanB
 {
 	private:
 		std::string	_name;
 		Weapon		*_weapon;
 	public:
-		HumanA(std::string name, Weapon &weapon);
+		HumanB(std::string name);
+		void	setWeapon(Weapon &Weapon);
 		void	attack(void);
-		~HumanA(void);
+		~HumanB(void);
 };
-
 #endif

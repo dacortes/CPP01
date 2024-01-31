@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 15:38:31 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/30 12:07:03 by dacortes         ###   ########.fr       */
+/*   Updated: 2024/01/31 07:37:44 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,13 @@
 class	Weapon
 {
 	private:
-		std::string	type;
+		std::string	_type;
 	public:
-		Weapon(void);
 		Weapon(std::string type);
-		const std::string	getType(void);
 		/*
 		 *	method get
 		*/
-		std::string const	get_type(void) const;
+		const std::string	getType(void) const;
 		/*
 		 *	method set
 		*/
