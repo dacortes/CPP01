@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 08:53:16 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/31 17:01:14 by dacortes         ###   ########.fr       */
+/*   Updated: 2024/01/31 17:27:38 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,8 @@ std::string	replace_words(std::fstream &file, std::string search,
 			pos = line.find(search);
 			if (pos == std::string::npos)
 				break ;
-			line.replace(pos, search.length(), replace);
+			line.erase(pos, search.length());
+			line.insert(pos, replace);
 			pos += replace.length();
 		}
 		out += line;
