@@ -6,7 +6,7 @@
 #    By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/31 08:40:24 by dacortes          #+#    #+#              #
-#    Updated: 2024/02/01 11:47:38 by dacortes         ###   ########.fr        #
+#    Updated: 2024/02/01 12:07:59 by dacortes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@
 NAME = Harl
 CPP = c++
 FLAGS = -Wall -Werror -Wextra -g -pedantic -std=c++98 \
-	#-fsanitize=address
+	-fsanitize=address
 RM = rm -rf
 
 ################################################################################
