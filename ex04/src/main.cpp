@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 08:53:16 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/31 17:27:38 by dacortes         ###   ########.fr       */
+/*   Updated: 2024/02/02 09:15:12 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ bool	replace_words_file(char *name, char *search, char *replace)
 int	main(int ac, char **av)
 {
 	if (ac != 4)
-		return (msg_error(NULL, ERROR_INV_ARGS));
+		return (msg_error("", ERROR_INV_ARGS));
 	if (!*av[1] || !*av[2] || !*av[3])
 		return ((!*av[1] && msg_error("file", ERROR_EMPTY_FL))
 			  || (!*av[2] && msg_error("word", ERROR_EMPTY_WD))
