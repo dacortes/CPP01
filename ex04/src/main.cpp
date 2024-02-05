@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 08:53:16 by dacortes          #+#    #+#             */
-/*   Updated: 2024/02/02 09:15:12 by dacortes         ###   ########.fr       */
+/*   Updated: 2024/02/05 18:23:11 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ std::string	replace_words(std::fstream &file, std::string search,
 		while (true)
 		{
 			pos = line.find(search);
-			if (pos == std::string::npos)
+			if (pos == std::string::npos || search != replace)
 				break ;
 			line.erase(pos, search.length());
 			line.insert(pos, replace);
