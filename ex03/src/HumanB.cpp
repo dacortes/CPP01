@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 06:41:08 by dacortes          #+#    #+#             */
-/*   Updated: 2024/01/31 07:18:31 by dacortes         ###   ########.fr       */
+/*   Updated: 2024/02/05 18:28:10 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ void	HumanB::setWeapon(Weapon &weapon)
 
 void	HumanB::attack(void)
 {
+	if (_weapon == NULL)
+		return ;
 	std::cout << _name <<  " attacks with their " << _weapon->getType()
 		<< std::endl;
 }
